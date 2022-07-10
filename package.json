@@ -1,0 +1,38 @@
+{
+    "name": "nodejs_mentoringprogramm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start:dev": "nodemon",
+        "build": "rimraf ./build && tsc",
+        "start": "npm run build && node dist/index.js",
+        "lint": "eslint . --ext .ts",
+        "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VladislavKochurko/NodeJS_MentoringProgramm.git"
+    },
+    "keywords": [
+        "NodeJS"
+    ],
+    "author": "Uladzislau Kachurka <Uladzislau_Kachurka@epam.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VladislavKochurko/NodeJS_MentoringProgramm/issues"
+    },
+    "homepage": "https://github.com/VladislavKochurko/NodeJS_MentoringProgramm#readme",
+    "devDependencies": {
+        "@types/node": "^18.0.3",
+        "@typescript-eslint/eslint-plugin": "^5.30.5",
+        "@typescript-eslint/parser": "^5.30.5",
+        "concurrently": "^7.2.2",
+        "eslint": "^8.19.0",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.8.2",
+        "typescript": "^4.7.4"
+    }
+}

@@ -1,0 +1,25 @@
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node Files #
+/node_modules
+npm-debug.log
+
+# Build #
+/dist/**
+
+# Certs #
+*.keytab
+*.crt
+
+# IDE #
+.idea/*
+!.idea/prettier.xml
+
+# Test Files #
+.nyc_output
+coverage
+.env
