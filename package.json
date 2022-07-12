@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start:dev": "nodemon",
+        "task1": "nodemon ./src/app/task1/1.1/index.ts",
+        "start:dev": "nodemon ./src/index.ts",
         "build": "rimraf ./build && tsc",
         "start": "npm run build && node dist/index.js",
         "lint": "eslint . --ext .ts",
